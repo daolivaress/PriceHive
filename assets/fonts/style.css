@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('icomoon.eot?13qeh3');
+    src: url('icomoon.eot?13qeh3#iefix') format('embedded-opentype'),
+        url('icomoon.ttf?13qeh3') format('truetype'),
+        url('icomoon.woff?13qeh3') format('woff'),
+        url('icomoon.svg?13qeh3#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    font-feature-settings: "liga";
+    -webkit-font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: discretionary-ligatures;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clear:before {
+    content: "\e902";
+}
+
+.icon-store_mall_directory:before {
+    content: "\e903";
+}
+
+.icon-search:before {
+    content: "\e901";
+}
+
+.icon-trash:before {
+    content: "\f1f8";
+}
+
+.icon-edit:before {
+    content: "\e900";
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+
+nav {
+    background-color: #f8fcff;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .19);
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.item-nav {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#search-bar-input {
+    display: flex;
+    height: 44px;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+    border-color: rgb(218, 220, 224);
+}
+
+input[type="search"] {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 1rem;
+    outline: none;
+    width: 28rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+}
+
+#search-btn {
+    margin-top: 3.5px;
+    padding: 0 1rem;
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+}
+
+#tiendas-btn {
+    background-color: #f8fcff;
+    border-radius: 22px;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: #00223b;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    border: 2px solid #00223b;
+}
+
+#tiendas-btn:hover {
+    background-color: #00223b;
+    color: #f8fcff;
+}
+
+main {
+    margin-top: 106px;
+}
+
+#banner-bg img[alt="bg"] {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    z-index: -2;
+    height: 40rem;
+}
+
+#banner-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner-items img {
+    width: 600px;
+}
+
+#banner-items p {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 38px;
+    width: 36rem;
+    color: #00223b;
+    text-shadow: 2.5px 2px rgba(0, 0, 0, .2);
+}
+
+#price-txt {
+    color: #b1f436;
+    text-shadow: 2.5px 2px rgba(0, 166, 255, 0.5);
+    font-weight: 900;
+}
+
+#hive-txt {
+    color: #1ba7f5;
+    text-shadow: 2.5px 2px rgba(162, 255, 0, 0.5);
+    font-weight: 900;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item img {
+    width: 200px;
+    border: 2px solid red;
+}
+
+.alkosto img {
+    padding: 0;
+    height: auto;
+}
+
+.falabella img {
+    padding: 0.96rem;
+}
+
+.exito img {
+    padding: 1.45rem;
+}
+
+.mercadolibre img {
+    padding: 1.55rem;
+}
+
+.olimpica img {
+    padding: 0.7rem;
+}
+
+.card-item {
+    margin-top: 15px;
+    border: 2px solid red;
+    width: 100%;
+}
+
+footer {
+    height: 8rem;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 12rem;
+    background-color: #00223b;
+    padding: 1rem;
+    color: white;
+}
+
+.footer-box__cop {
+    padding: 1rem;
+    margin-top: 25px;
+}
+
+.footer-box__desc span {
+    color: #b1f436;
+}

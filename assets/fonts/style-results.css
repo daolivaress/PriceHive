@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('icomoon.eot?13qeh3');
+    src: url('icomoon.eot?13qeh3#iefix') format('embedded-opentype'),
+        url('icomoon.ttf?13qeh3') format('truetype'),
+        url('icomoon.woff?13qeh3') format('woff'),
+        url('icomoon.svg?13qeh3#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    font-feature-settings: "liga";
+    -webkit-font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: discretionary-ligatures;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clear:before {
+    content: "\e902";
+}
+
+.icon-store_mall_directory:before {
+    content: "\e903";
+}
+
+.icon-search:before {
+    content: "\e901";
+}
+
+.icon-trash:before {
+    content: "\f1f8";
+}
+
+.icon-edit:before {
+    content: "\e900";
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+
+nav {
+    background-color: #f8fcff;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .19);
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.item-nav {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#search-bar-input {
+    display: flex;
+    height: 44px;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+    border-color: rgb(218, 220, 224);
+}
+
+input[type="search"] {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 1rem;
+    outline: none;
+    width: 28rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+}
+
+#search-btn {
+    margin-top: 3.5px;
+    padding: 0 1rem;
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+}
+
+#tiendas-btn {
+    background-color: #f8fcff;
+    border-radius: 22px;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: #00223b;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    border: 2px solid #00223b;
+}
+
+#tiendas-btn:hover {
+    background-color: #00223b;
+    color: #f8fcff;
+}
+
+main {
+    margin-top: 130px;
+}
+
+#main-content {
+    display: none;
+}
+
+#resultados-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+
+.item {
+    width: 200px;
+    height: 380px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .19);
+    border-radius: 10px;
+    margin: 1rem 1.5rem;
+}
+
+.item img{
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+}
+
+#comprar-btn {
+    background-color: #f8fcff;
+    border-radius: 22px;
+    padding: 0.25rem 3rem;
+    cursor: pointer;
+    color: #00223b;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    border: 2px solid #00223b;
+    width: 100%;
+}
+
+#comprar-btn:hover {
+    background-color: #00223b;
+    color: #f8fcff;
+}
+
+.card-item .nombre {
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+
+.card-item .precio {
+    margin-bottom: 3rem;
+}
+
+.card-item .tienda {
+    margin-bottom: 0.5rem;
+    font-size: 13.5px;
+}
+
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+#loading img {
+    width: 50px;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#error {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+}
+
+#error-btn {
+    background-color: #f8fcff;
+    border-radius: 22px;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+    color: #00223b;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    border: 2px solid #00223b;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .19);
+    margin-top: 1rem;
+}
+
+#error-btn:hover {
+    background-color: #00223b;
+    color: #b1f436;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .19);
+
+}
+
+
+#pagination button {
+    background-color: #f8fcff;
+    border-radius: 22px;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+    color: #00223b;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    border: 2px solid #00223b;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .19);
+
+}
+
+#pagination button.active {
+    color: #b1f436;
+    background-color: #00223b;
+    border-color: #b1f436;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .19);
+}
+
+
+#pagination button:hover {
+    background-color: #00223b;
+    color: #b1f436;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .19);
+
+}
+
+#filters {
+    display: flex;
+    color: #00223b;
+    font-weight: bold;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    justify-content: space-between;
+}
+
+#filtros-txt {
+    margin-left: 5rem;
+    margin-bottom: 12px;
+    margin-right: 5rem;
+    border-bottom: 1px solid #00223b;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+#order-filter{
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#tienda-filter {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.toggle-stores {
+    font-size: 13px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #00223b;
+    padding: 0.25rem 0.5rem;
+}
+
+.store-checkbox {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    padding: 0.05rem;
+    font-weight: normal;
+}
+
+.store-checkbox label {
+    margin-left: 3px;
+}
+
+.drop {
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  color: #00223b;
+}
+
+#results-txt {
+    margin-top: 60px;
+    margin-left: 5rem;
+    margin-bottom: -30px;
+    font-weight: bold;
+}
+
+footer {
+    height: 8rem;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 12rem;
+    background-color: #00223b;
+    padding: 1rem;
+    color: white;
+    position: relative;
+}
+
+.footer-box__cop {
+    padding: 1rem;
+    margin-top: 25px;
+}
+
+.footer-box__desc span {
+    color: #b1f436;
+}
