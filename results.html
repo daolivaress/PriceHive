@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Hive</title>
+    <link rel="stylesheet" href="assets\fonts\style-results.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-items">
+                <li class="item-nav">
+                    <div class="logo" id="nav-logo">
+                        <a href="index.html"><img src="assets\img\pricehive.webp" alt="logo"></a>
+                    </div>
+                </li>
+                <li class="item-nav">
+                    <div class="search-bar" id="search-bar-input">
+                        <input type="search" id="search-bar" placeholder="Buscar...">
+                        <button type="submit" id="search-btn"><span class="icon-search"></span></button>
+                    </div>
+                </li>
+                <li class="item-nav">
+                    <div class="tiendas">
+                        <a href="tiendas.html"><button id="tiendas-btn">Tiendas</button></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section>
+                <div id="loading">
+                    <img src="assets\img\loading-7528_512.gif" alt="cargando">
+                </div>
+                <div id="error">
+
+                </div>
+            </section>
+        </article>
+        <article>
+            <section>
+                <div id="main-content">
+                    <div id="filtros-txt">
+                        <p>Filtros ▼</p>
+                    </div>
+                    <div id="filters">
+                        <div id="order-filter">
+                            <p>Ordernar por:</p>
+                            <select name="order-options" id="order-options-id" class="drop" onchange="applyFilters()">
+                                <option value="original">Seleciona una opcion</option>
+                                <option value="Nombre">Nombre</option>
+                                <option value="Precio_asc">Menor precio</option>
+                                <option value="Precio_desc">Mayor precio</option>
+                            </select>
+                        </div>
+                        <div id="tienda-filter">
+                        </div>
+                    </div>
+                    <p id="results-txt">Resultados de la busqueda:</p>
+                    <div id="resultados-productos">
+                    </div>
+                    <div id="pagination"></div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-box">
+            <p class="footer-box__cop">Copyright © 2024, Ltd All Rights Reserved</p>
+            <p class="footer-box__desc">Web Designed by <span>Daniel Olivares</span></p>
+        </div>
+    </footer>
+    <script src="results.js"></script>
+</body>
+</html>
